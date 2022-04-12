@@ -1,1 +1,1 @@
-<?php include_once("lib.html"); ?>
+<?php include_once("index.html"); ?>
