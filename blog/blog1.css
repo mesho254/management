@@ -1,0 +1,283 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background: rgb(242, 243, 243);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav .logo a:hover {
+    text-decoration: none;
+}
+
+nav span {
+    color: green;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav p {
+    color: blueviolet;
+    font-size: 30px;
+    padding: 17px 30px;
+}
+
+nav p:hover {
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 10px;
+}
+
+nav h1 {
+    padding-left: 1px;
+}
+
+nav a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(110, 68, 189);
+}
+
+nav input {
+    padding: 8px 30px;
+}
+
+nav i {
+    cursor: pointer;
+    color: rgb(9, 9, 10);
+    padding: 7px 9px;
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+nav i:hover {
+    cursor: pointer;
+    scale: 1.05;
+    color: blue;
+}
+
+.herosection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: beige;
+
+}
+
+.herosection .board {
+    cursor: pointer;
+    scale: 1.04;
+}
+
+.herosection .board:hover {
+    cursor: pointer;
+    transition: ease-in-out 500ms;
+    scale: 1.05;
+}
+
+.herosection .board p {
+    font-size: 40px;
+    align-items: center;
+    padding: 10px;
+}
+
+.herosection .board img {
+    height: 500px;
+    width: 550px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1170px) {
+    .herosection .board img {
+        width: 480px;
+    }
+
+    nav a,
+    h1 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .herosection .board img {
+        width: 400px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .herosection .board img {
+        width: 350px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .herosection {
+        display: block;
+    }
+
+    .herosection .board img,
+    .herosection .board p {
+        position: relative;
+        left: 190px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+
+    .herosection .board img,
+    .herosection .board p {
+        position: relative;
+        left: 100px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+
+    .herosection .board img,
+    .herosection .board p {
+        position: relative;
+        left: 50px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .herosection .board img,
+    .herosection .board p {
+        position: relative;
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    .herosection .board img,
+    .herosection .board p {
+        position: relative;
+        left: 40px;
+    }
+
+    .herosection .board img {
+        width: 250px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 311px) {
+
+    .herosection .board img,
+    .herosection .board p {
+        position: relative;
+        left: 10px;
+    }
+
+    .herosection .board img {
+        width: 220px;
+        height: 250;
+    }
+}
+
+.others {
+    background-color: azure;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 20px;
+    border-top: solid 3px grey;
+}
+
+.others .catalogues {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.others .catalogues:hover {
+    cursor: pointer;
+    transition: ease-in-out 500ms;
+    scale: 1.05;
+}
+
+.others .catalogues img {
+    height: 200px;
+    width: 300px;
+    padding: 10px 20px;
+    border-radius: 70px;
+}
+
+@media screen and (max-width: 1170px) {
+    .others {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .others {
+        display: block;
+    }
+
+    .others .catalogues {
+        position: relative;
+        left: 150px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .others .catalogues {
+        position: relative;
+        left: 70px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .others .catalogues {
+        position: relative;
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .others .catalogues {
+        position: relative;
+        left: -40px;
+    }
+}
+
+@media screen and (max-width: 311px) {
+    .others .catalogues {
+        position: relative;
+        left: -60px;
+    }
+
+    .others .catalogues img {
+        height: 200px;
+        width: 250px;
+        padding: 10px 20px;
+        border-radius: 40px;
+    }
+}
+
+.more {
+    height: 50vh;
+    border-top: solid 3px grey;
+}
+
+.more p {
+    width: 500px;
+    align-items: center;
+    padding: 40px 50px;
+}
