@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background: rgb(242, 243, 243);
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+
+nav span {
+    color: green;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav p {
+    color: blueviolet;
+    font-size: 30px;
+    padding: 17px 100px;
+    background-color: rgb(242, 243, 243);
+}
+
+nav p:hover {
+    cursor: pointer;
+}
+
+nav h1 {
+    padding: 20px 140px;
+}
+
+p {
+    color: rgb(6, 6, 8);
+    font-size: 30px;
+    background-color: rgb(218, 241, 252);
+    padding: 10px;
+}
+
+.herosection {
+    background-color: rgb(218, 241, 252);
+    display: -ms-grid;
+    display: grid;
+    height: 120vh;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.1px 20px;
+    padding: 20px 90px;
+}
+
+.herosection .catalogue {
+    height: 300px;
+    width: 300px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.herosection .catalogue:hover {
+    scale: 1.1;
+}
+
+.herosection .catalogue img {
+    height: 200px;
+    width: 300px;
+    padding: 10px 0;
+}
+
+.herosection .catalogue h1 {
+    color: rgb(29, 134, 43);
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+.herosection .catalogue button {
+    padding: 15px 80px;
+    background-color: aquamarine;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.herosection .catalogue button:hover {
+    color: brown;
+    scale: 1.1;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1250px) {
+    .herosection {
+        padding: 10px 19px;
+        display: grid;
+        gap: 20px;
+    }
+
+    .herosection .catalogue:hover {
+        scale: 1.05;
+    }
+
+}
+
+@media screen and (max-width: 1210px) {
+    .herosection {
+        padding: 10px 19px;
+        display: grid;
+        gap: 20px;
+    }
+
+    @media screen and (max-width: 1045px) {
+        .herosection {
+            display: grid;
+            gap: 20px;
+        }
+
+        .herosection .catalogue {}
+    }
+
+    @media screen and (max-width: 1180px) {
+        .herosection {
+            padding: 10px 20px;
+        }
+
+        .herosection .catalogue:hover {
+            scale: 1.05;
+        }
+    }
+
+    @media screen and (max-width: 1175px) {
+        .herosection {
+            padding: 10px 20px;
+        }
+
+        .herosection .catalogue:hover {
+            scale: 1.05;
+        }
+    }
+
+    @media screen and (max-width: 1050px) {
+        .herosection {
+            height: fit-content;
+            padding: 20px;
+        }
+
+        .herosection .catalogue:hover {
+            scale: 1.05;
+        }
+    }
+
+    @media screen and (max-width: 950px) {
+        .herosection {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 10px 100px;
+            height: fit-content;
+        }
+
+        .herosection .catalogue:hover {
+            scale: 1.05;
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        .herosection {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+            padding: 10px 100px;
+            height: fit-content;
+        }
+
+        nav {
+            display: block;
+            height: fit-content;
+            width: 100%;
+            padding: 10px 20px;
+            padding-left: 5px;
+        }
+
+        .herosection .catalogue:hover {
+            scale: 1.05;
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        .herosection {
+            padding: 10px 40px;
+        }
+
+        .herosection .catalogue:hover {
+            scale: 1.05;
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+        .herosection {
+            padding: 10px 10px;
+        }
+
+        nav {
+            padding-left: 1px;
+            margin-left: 0;
+        }
+
+        .herosection .catalogue:hover {
+            scale: 1.05;
+        }
+    }
+
+    @media screen and (max-width: 317px) {
+        .herosection {
+            width: fit-content;
+            height: fit-content;
+        }
+
+        nav {
+            width: 100%;
+            display: block;
+            align-items: center;
+        }
+
+        nav h1 {
+            padding: 5px 5px;
+        }
+
+        .herosection .catalogue:hover {
+            scale: 1.05;
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+        nav {
+            width: 100%;
+            display: block;
+            align-items: center;
+        }
+
+        .herosection .catalogue:hover {
+            scale: 1.05;
+        }
+    }
+
+    @media screen and (max-width: 252px) {
+        .herosection {
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .herosection .catalogue {
+            width: 230px;
+            padding: 5px 6px;
+        }
+
+        .herosection .catalogue:hover {
+            scale: 1.05;
+        }
+
+        .herosection .catalogue img {
+            width: 230px;
+        }
+
+        .herosection .catalogue button {
+            font-size: 16px;
+            padding: 8px 10px;
+        }
+    }
+
+    @media screen and (max-width: 324px) {
+        .herosection {
+            width: 100%;
+        }
+
+        nav {
+            width: 100%;
+            display: block;
+        }
+
+        .herosection .catalogue:hover {
+            scale: 1.05;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        .herosection {
+            width: fit-content;
+        }
+
+        .herosection .catalogue:hover {
+            scale: 1.005;
+        }
+    }
