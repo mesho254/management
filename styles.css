@@ -51,44 +51,33 @@ nav .content li :hover {
 
 }
 
-.drop-services {
-    display: none;
-}
-
-nav li:hover .drop-services {
+.drop-services1,
+.drop-services2,
+.drop-services3 {
     display: block;
     position: absolute;
+    top: 70px;
+    padding: 40px 20px;
     background-color: rgb(242, 243, 243);
-    padding: 50px 200px;
-    padding-left: 20px;
+    height: 300px;
+    width: 400px;
     border: none;
 }
 
-nav li:hover .drop-services a {
+.drop-services1 ul li a,
+.drop-services2 ul li a,
+.drop-services3 ul li a {
     font-size: 15px;
-    transition: none;
-    text-align: left;
+    padding: 13px 30px;
 }
 
-nav li:hover .drop-services a:hover {
+.drop-services1 ul li a:hover,
+.drop-services2 ul li a:hover,
+.drop-services3 ul li a:hover {
+    cursor: pointer;
     color: blueviolet;
-    background-color: transparent;
-    text-transform: uppercase;
+    text-decoration: wavy;
     text-decoration: underline;
-}
-
-nav li:hover .drop-services ul {
-    display: block;
-    margin: 10px;
-}
-
-nav li:hover .drop-services li {
-    width: 150px;
-    padding: 10px;
-    border-bottom: 1px dottet blue;
-    background: transparent;
-    border-radius: 0;
-    text-align: left;
 }
 
 nav span {
@@ -122,7 +111,7 @@ nav button {
 nav button:hover {
     background-color: rgb(117, 148, 148);
     cursor: pointer;
-    scale: 1.1;
+
 }
 
 .wrapper nav .dropping {
@@ -135,13 +124,122 @@ nav button:hover {
     display: none;
 }
 
+.login {
+    position: fixed;
+    top: 80px;
+    left: 26rem;
+    width: 35%;
+    height: 85%;
+    background-color: rgb(195, 185, 204);
+    border-radius: 20px;
+    z-index: 10;
+}
+
+.formName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+    margin-top: 2px;
+    gap: 15px 20px;
+}
+
+.login .close-login {
+    background: none;
+    font-size: 25px;
+    position: fixed;
+    top: 80px;
+    left: 50rem;
+    height: 0.00001%;
+    width: 29%;
+    padding-bottom: 2px;
+    margin-bottom: 0;
+    cursor: pointer;
+    width: 0.00001%;
+}
+
+.login .close-login:hover {
+    color: red;
+}
+
+.formName h1 {
+    font-size: 70px;
+    position: relative;
+    top: -20px;
+}
+
+.formName label {
+    font-size: 30px;
+}
+
+.formName input {
+    padding: 10px 50px;
+    font-size: 17px;
+    border: none;
+    border-radius: 6px;
+}
+
+.formName .btnLogin {
+    padding: 10px 50px;
+    font-size: 17px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.formName a {
+    text-decoration: none;
+}
+
+.formName a:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.hidden {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 10, 10, 0.6);
+    backdrop-filter: blur(6px);
+    z-index: 5;
+}
+
 #navi {
     display: none;
+}
+
+@media screen and (max-width:1300px) {
+    .login {
+        position: fixed;
+        left: 20%;
+    }
+
+    .login .close-login {
+        position: relative;
+        left: 450px;
+        top: 30px;
+
+    }
 }
 
 @media screen and (max-width: 1280px) {
     .wrapper nav {
         display: inline-flex;
+    }
+
+    .login .close-login {
+        position: relative;
+        left: 370px;
+        top: 30px;
+
     }
 }
 
@@ -183,6 +281,13 @@ nav button:hover {
 
     .wrapper nav .content li a {
         font-size: 17px;
+    }
+
+    .login .close-login {
+        position: relative;
+        left: 300px;
+        top: 30px;
+
     }
 }
 
@@ -246,6 +351,49 @@ nav button:hover {
     }
 }
 
+@media screen and (max-width:800px) {
+    .login {
+        position: fixed;
+        left: 90px;
+        width: 70%;
+        height: 70%;
+    }
+
+    .login .close-login {
+        position: relative;
+        left: 400px;
+        top: 10px;
+
+    }
+}
+
+@media screen and (max-width:790px) {
+    .login .close-login {
+        position: relative;
+        left: 240px;
+        top: 10px;
+
+    }
+
+    .login {
+        position: fixed;
+        left: 200px;
+
+    }
+
+    .login .formName h1 {
+        font-size: 25px;
+    }
+
+    .login .formName input {
+        padding: 9px 15px;
+    }
+
+    .formName label {
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width: 660px) {
     .wrapper nav .dropping {
         display: block;
@@ -303,6 +451,39 @@ nav button:hover {
     .wrapper nav .content .drop-services li a:hover {
         color: black;
     }
+
+    .login {
+        position: fixed;
+        left: 40px;
+        width: 80%;
+
+    }
+
+    .login .close-login {
+        position: relative;
+        left: 400px;
+        top: 10px;
+
+    }
+
+}
+
+@media screen and (max-width:530px) {
+    .login .close-login {
+        position: relative;
+        left: 330px;
+        top: 10px;
+
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .login .close-login {
+        position: relative;
+        left: 200px;
+        top: 10px;
+
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -347,6 +528,29 @@ nav button:hover {
     }
 }
 
+@media screen and (max-width: 280px) {
+    .login {
+        position: fixed;
+        left: 10px;
+        width: 90%;
+    }
+
+    .login .close-login {
+        position: relative;
+        left: 100px;
+        top: 5px;
+
+    }
+
+    .formName h1 {
+        font-size: 15px;
+    }
+
+    .formName input {
+        font-size: 13px;
+        padding: 8px 5px;
+    }
+}
 
 .Herosection {
     background-image: url("/images/background\(1\).jpg");

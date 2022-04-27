@@ -11,8 +11,6 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-
-
 }
 
 nav span {
@@ -61,4 +59,44 @@ nav i {
     color: rgb(73, 73, 88);
     font-size: 20px;
     cursor: pointer;
+}
+
+.herosection {
+
+    background: url("/images/webinar.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    align-items: center;
+
+}
+
+.herosection .landing_page {
+    height: 400px;
+    position: relative;
+    top: 100px;
+}
+
+.herosection .landing_page p {
+    font-size: 70px;
+    padding: 40px 70px;
+    color: rgb(76, 116, 72);
+}
+
+.herosection .landing_page button {
+    position: relative;
+    left: 500px;
+    top: -20px;
+    padding: 20px 70px;
+    background-color: rgb(193, 131, 248);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.herosection .landing_page button:hover {
+    cursor: pointer;
+    scale: 1.1;
+    color: blue;
 }

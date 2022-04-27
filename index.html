@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
     <div class="wrapper">
         <nav>
             <input type="checkbox" id="navi">
@@ -18,8 +19,8 @@
             <p class="logo">Lib<span>Tech</span></p>
 
             <ul class="content">
-                <li><a href="#">Services<i class="fa fa-sort-desc"></i></a>
-                    <div class="drop-services">
+                <li><a href="#" class="btnDrop1">Services<i class="fa fa-sort-desc"></i></a>
+                    <div class="drop-services1 hidden">
                         <ul>
                             <li><a href="#">office_365</a></li>
                             <li><a href="#">Managed_IT</a></li>
@@ -29,18 +30,18 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">Resources<i class="fa fa-sort-desc"></i></a>
-                    <div class="drop-services">
+                <li><a href="#" class="btnDrop2">Resources<i class="fa fa-sort-desc"></i></a>
+                    <div class="drop-services2 hidden">
                         <ul>
                             <li><a href="/artbook/artbooks.html">articles_&_books</a></li>
                             <li><a href="/blog/blog.html">Blog</a></li>
                             <li><a href="/papers/pastP.html">Past_papers</a></li>
-                            <li><a href="#">Webinar_Archive</a></li>
+                            <li><a href="/webinar/webinar.html">Webinar_Archive</a></li>
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">Community<i class="fa fa-sort-desc"></i></a>
-                    <div class="drop-services">
+                <li><a href="#" class="btnDrop3">Community<i class="fa fa-sort-desc"></i></a>
+                    <div class="drop-services3 hidden">
                         <ul>
                             <li><a href="#">Community_Home</a></li>
                             <li><a href="#">Upcoming_Events_&_webinars</a></li>
@@ -55,10 +56,24 @@
                 </li>
             </ul>
 
-            <button id="logincontainer" type="button" onclick="location.href ='/credentials/login.html'">Login</button>
+            <button class="EnterLogin">Login</button>
         </nav>
     </div>
+
     <section class="Herosection">
+        <div class="login hidden">
+            <button class="close-login">&times;</button>
+            <form class="formName">
+                <h1>Login</h1>
+                <label>UserName :</label>
+                <input type="text" placeholder="Enter your UserName">
+                <label>Password :</label>
+                <input type="password" placeholder="********">
+                <button class="btnLogin">Login</button>
+                <a href="#">Forgot_Your_Password</a>
+                <a href="#">Create New Account</a>
+            </form>
+        </div>
         <p>Inovation and Empowerment through reading books in silence!!!</p>
     </section>
     <section class="about" id="About">
@@ -121,8 +136,10 @@
             </div>
         </div>
     </section>
-
-
+    <div class="overlay hidden">
+    </div>
+    <script src="script.js"></script>
 </body>
+
 
 </html>
