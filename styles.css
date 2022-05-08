@@ -553,7 +553,7 @@ nav button:hover {
 }
 
 .Herosection {
-    background-image: url("/images/background\(1\).jpg");
+    background-image: url("./images/background\(1\).jpg");
     background-size: cover;
     background-position: center;
     padding: 20px 20px;

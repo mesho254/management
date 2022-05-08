@@ -20,7 +20,7 @@ const terminate = function () {
     loginCont.classList.add('hidden');
     overlay.classList.add('hidden');
 }
-let clicked = true;
+let clicked = false;
 
 EnterLogin.addEventListener('click', function () {
     loginCont.classList.remove('hidden');
