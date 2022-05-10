@@ -62,13 +62,19 @@ nav i:hover {
 }
 
 .herosection .pdf {
-    width: 70%;
+    width: 65%;
     height: 200px;
-    padding: 20px 80px;
+    padding: 15px 80px;
     position: relative;
-    left: 5px;
+    left: -40px;
     right: 20px;
 
+}
+
+.herosection .pdf img {
+    height: 150px;
+    width: 300px;
+    border-radius: 12px;
 }
 
 .herosection .pdf button {
