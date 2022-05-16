@@ -124,13 +124,14 @@ nav button:hover {
     display: none;
 }
 
+/*login container*/
 .login {
     position: fixed;
     top: 80px;
-    left: 26rem;
-    width: 35%;
-    height: 85%;
-    background-color: rgb(195, 185, 204);
+    left: 32rem;
+    width: 25%;
+    height: 80%;
+    background-color: rgba(10, 8, 12, 0.788);
     border-radius: 20px;
     z-index: 10;
 }
@@ -147,9 +148,9 @@ nav button:hover {
 .login .close-login {
     background: none;
     font-size: 25px;
-    position: fixed;
-    top: 80px;
-    left: 50rem;
+    position: relative;
+    top: 20px;
+    left: 18rem;
     height: 0.00001%;
     width: 29%;
     padding-bottom: 2px;
@@ -166,14 +167,16 @@ nav button:hover {
     font-size: 70px;
     position: relative;
     top: -20px;
+    color: rgba(245, 245, 220, 0.5);
 }
 
 .formName label {
     font-size: 30px;
+    color: rgba(245, 245, 220, 0.5);
 }
 
 .formName input {
-    padding: 10px 50px;
+    padding: 8px 30px;
     font-size: 17px;
     border: none;
     border-radius: 6px;
@@ -190,6 +193,7 @@ nav button:hover {
 
 .formName a {
     text-decoration: none;
+    color: rgba(245, 245, 220, 0.5);
 }
 
 .formName a:hover {
@@ -212,6 +216,7 @@ nav button:hover {
     z-index: 5;
 }
 
+/* Media queries for login*/
 #navi {
     display: none;
 }
@@ -231,18 +236,24 @@ nav button:hover {
 }
 
 @media screen and (max-width: 1280px) {
+    .login {
+        position: fixed;
+        left: 35%;
+    }
+
     .wrapper nav {
         display: inline-flex;
     }
 
     .login .close-login {
         position: relative;
-        left: 370px;
-        top: 30px;
+        left: 260px;
+        top: 28px;
 
     }
 }
 
+/*media queries for nav bar*/
 @media screen and (max-width: 1050px) {
     .wrapper nav .content li a {
         font-size: 18px;

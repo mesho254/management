@@ -10,6 +10,7 @@ const displayList1 = document.querySelector('.drop-services1');
 const displayList2 = document.querySelector('.drop-services2');
 const displayList3 = document.querySelector('.drop-services3');
 const clickBody = document.querySelector('.Herosection');
+
 const unclick = function () {
     displayList2.classList.add('hidden');
     displayList3.classList.add('hidden');
@@ -69,4 +70,3 @@ dropButton3.addEventListener('click', function () {
 clickBody.addEventListener('click', function () {
     unclick();
 })
-
